@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            Project-78
+        </title>
+    </head>
+    <body>
+        <h1>
+            Family Book
+        </h1>
+        <h2 id="h2">
+            Father
+        </h2>
+        <img id="img" src="">
+        <h3 id="h3">
+            
+        </h3>
+        <button type="button" id="btn1" onclick="nextmember()">
+        next
+        </button>
+        <script>
+            var images=["https://i.postimg.cc/MKdhy06Z/family.jpg","https://i.postimg.cc/wjMnFtMX/father.jpg",
+             "https://i.postimg.cc/JnL6wtrd/sister.jpg", "https://i.postimg.cc/bw5W5zSK/mother.jpg"];
+             console.log(images);
+
+            var names=["Family Book","Vishudas","Rugmini","Haritha"];
+            console.log(names);
+
+            var i=0;
+            function nextmember(){
+                i++;
+                var no_of_family_members=length(names);
+                if(i>no_of_family_members);
+                {
+                    i=0
+                }
+                var updatedimage=images[i];
+                var updatednames=proper_names[i]
+                document.getElementById(h3).innerHTML=updatednames;
+                document.getElementById(img).innerHTML.src=updatedimage;
+            }
+
+        </script>
+    </body>
+</html>
